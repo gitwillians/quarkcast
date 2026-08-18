@@ -1,0 +1,11 @@
+quarkus:
+    http:
+        port: 8080
+    datasource:
+        db-kind: sqlite
+        jdbc:
+            url: jdbc:sqlite:quarkcast.db
+    hibernate-orm:
+        dialect: org.hibernate.community.dialect.SQLiteDialect
+        database:
+            generation: update
